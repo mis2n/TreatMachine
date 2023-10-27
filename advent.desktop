@@ -1,0 +1,5 @@
+[Desktop Entry]
+
+Name=Advent
+
+Exec=/usr/bin/python3 /home/pi/advent/advent.py
