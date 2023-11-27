@@ -17,13 +17,13 @@ for (root, dirs, files) in os.walk(vidpath, topdown=True):
 
 times = []
 for i in range(len(vidfiles)):
-    loc1 = vidfiles[i].find("_") + 1
-    loc2 = vidfiles[i].find(".mp4")
-    t = int(vidfiles[i][loc1:loc2])
-    times.append(t)
+    #loc1 = vidfiles[i].find("_") + 1
+    #loc2 = vidfiles[i].find(".mp4")
+    #t = int(vidfiles[i][loc1:loc2])
+    times.append(30)
 
 tog = get_tog()
-t = int(times[tog] / 2) + 1
+t = int(times[tog] / 2) 
 #print(tog)
 #print(times[tog])
 #print(t)

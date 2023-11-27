@@ -11,10 +11,10 @@ d = dt.day
 m = dt.month
 text = ""
 print(dt, "*", d, "*", m)
-
-fn = "/home/pi/advent/day_images/h" + str(d) + ".png"
-vidpath = "/home/pi/advent/vidshalloween/"
-cmnd2 = "sudo python3 /home/pi/advent/twinkle_spooky.py"
+'''
+fn = "/home/pi/advent/images_thanksgiving/t" + str(d) + ".png"
+vidpath = "/home/pi/advent/vids/"
+cmnd2 = "sudo python3 /home/pi/advent/twinkle.py"
 
 '''
 
@@ -31,11 +31,15 @@ if m == 10:
     fn = "day_images/h" + str(d) + ".png"
     vidpath = "vidshalloween/"
     cmnd2 = "sudo python3 twinkle_spooky.py"
-if m == 12:
-    fn = "day_images/" + str(d) + ".png"
-    vidpath = "vids/"
-    cmnd2 = "sudo python3 twinkle.py"
-'''
+if m == 11:
+    fn = "/home/pi/advent/images_thanksgiving/t" + str(d) + ".png"
+    vidpath = "/home/pi/advent/vids/"
+    cmnd2 = "sudo python3 /home/pi/advent/twinkle.py"
+elif m == 12:
+    fn = "/home/pi/advent/day_images/" + str(d) + ".png"
+    vidpath = "/home/pi/advent/vids/"
+    cmnd2 = "sudo python3 /home/pi/advent/twinkle.py"
+
 print(fn, "***********************************************")
 print("vidpath", vidpath)
 print("twinkle command", cmnd2)    
@@ -83,7 +87,7 @@ def playvid():
 # Function that runs LED lightshow code (os command must use sudo to access GPIO pins)
 def twinkle():
     print("ACTIVATE LIGHTS")
-    cmnd2 = "sudo python3 /home/pi/advent/twinkle_spooky.py"
+    #cmnd2 = "sudo python3 /home/pi/advent/twinkle.py"
     os.system(cmnd2)
 
 # Function that runs candy dispenser (not currently in use)
