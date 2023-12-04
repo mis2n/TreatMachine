@@ -2,4 +2,6 @@
 
 Name=Advent
 
+Exec=sleep 10
+
 Exec=/usr/bin/python3 /home/pi/advent/advent.py
